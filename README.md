@@ -1,7 +1,7 @@
 # Model Evaluation and Validation
 ## Project: Predicting Boston Housing Prices
 ### Files Description
-- `project description.md`: Project overview, highlights, evaluation and software requirement. 
+- `project description.md`: Project overview, highlights, evaluation and software requirement. **Read Firstly **
 - `README.md`: this file.
 - `boston_housing.ipynb`: This is the main file that will be performing my work on the project.
 - `housing.csv`: The project dataset. I'll load this data in the notebook.
