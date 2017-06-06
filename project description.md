@@ -22,7 +22,7 @@ Things you will learn by completing this project:
 ### Project Evaluation
 Your project will be reviewed by a Udacity reviewer against the **<a href="https://review.udacity.com/#!/rubrics/103/view" target="_blank">Predicting Boston Housing Prices project rubric</a>**. Be sure to review this rubric thoroughly and self-evaluate your project before submission. All criteria found in the rubric must be *meeting specifications* for you to pass.
 
-## Install
+## Software Requirements
 
 This project requires **Python 2.7** and the following Python libraries installed:
 
