@@ -79,6 +79,11 @@ X_train, X_test, y_train, y_test = train_test_split(features, prices, test_size=
 ```
 #### Training and Testing
 Provide a valid reason for why a dataset is split into training and testing subsets for a model. 
+```
+training data for training, establishing a model
+testing data for generalization and testing your model
+    If we didn't have an independent set of data for testing, we can not know the performance of our model,for instance, underfitting or overfitting
+```
 ### Analyzing Model Performance
 #### Learning the Data
 - Correctly identify the trend of both the training and testing curves from the graph as more training points are added. 
@@ -91,8 +96,21 @@ Pick a best-guess optimal model with reasonable justification using the model co
 ### Evaluating Model Performance
 #### Grid Search
 Correctly describe the grid search technique and how it can be applied to a learning algorithm.
+```
+grid search is a way of systematically working through multiple combinations of parameter tunes, cross-validating as it goes to determine which tune gives the best performance.
+according to your parameter attribute, grid search makes a grid with all the combinations your parameter provided and fit your data set with that grid. According to the result of fitting, you can get the best combination of your parameter.
+```
 #### Cross-Validation
 Correctly describe the k-fold cross-validation technique and discuss the benefits of its application when used with grid search when optimizing a model.
+```
+divide data set into k parts. Picking 1 subset for test data, others for training data and loop k times. Each of the k subsamples used exactly once as the validation data
+    for i in range(k):
+        test-data = data[i]
+        train-data = data[:i]+data[i+1:]
+        fit
+            compute the average error across all k trials
+using all data sets and avoiding bad results of wrongly spliting data
+```
 #### Implementation: Fitting a Model
 Use the grid search technique to optimize the `'max_depth'` parameter for the **decision tree algorithm**
 - Use `DecisionTreeRegressor` from `sklearn.tree` to create a decision tree regressor object.
